@@ -5,6 +5,6 @@
 
 let txt1 = "Este es el principio";
 let txt2 = "este es el final";
-let txt3 = txt1 + " y " + txt2;
+let txt3 = txt1 + ' y ' + txt2;
 
 console.log(txt3);
