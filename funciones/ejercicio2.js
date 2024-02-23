@@ -3,7 +3,7 @@ Cuando llamemos a la función se mostrará un log indicándonos lo que deseamos 
 
 function hoyQuieroComer(comida) {
 
-    console.log("hoy quiero comer " + comida);
+    console.log('hoy quiero comer ' + comida);
 
 }
 hoyQuieroComer('garbanzos.');
