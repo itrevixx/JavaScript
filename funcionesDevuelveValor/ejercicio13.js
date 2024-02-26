@@ -17,5 +17,5 @@ deberían devolver true. */
 function nand(bool1, bool2) {
     return !(bool1 && bool2)
 }
-const x = nand(true, false);
+const x = nand(false, true);
 console.log(x)
