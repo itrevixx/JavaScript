@@ -9,5 +9,4 @@ Debería devolver «AI». */
 const shortcut = (txt1, txt2) => {
     return txt1.charAt(0) + txt2.charAt(0);
 }
-const x = shortcut('Ammesty', 'Internacional');
-console.log(x);
+console.log(shortcut('Ammesty', 'Internacional'));

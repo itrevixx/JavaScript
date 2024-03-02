@@ -7,6 +7,11 @@ Por ejemplo:
 
 indexOfIgnoreCase("bit","it");
 y
+indexOfIgnoreCase("bit","IT");
 
-indexOfIgnoreCase("bit","IT"); */
+deberían devolver 1 */
 
+const indexOfIgnoreCase = (txt1, txt2) => {
+    return txt1.toUpperCase().indexOf(txt2.toUpperCase());
+}
+console.log(indexOfIgnoreCase('bit', 'IT'));

@@ -10,5 +10,4 @@ Debería devolver: «pablo-Pablo» */
 const toCase = txt => {
     return txt.toLowerCase() + '-' + txt.toUpperCase();
 }
-const x = toCase('Hola');
-console.log(x);
+console.log(toCase('Hola'));

@@ -14,5 +14,4 @@ Debería devolver R. */
 const firstChar = (txt) => {
     return txt.trim()[0];
 }
-const x = firstChar("   Rosa Parks");
-console.log(x);
+console.log(firstChar("   Rosa Parks"));

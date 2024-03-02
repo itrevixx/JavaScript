@@ -6,7 +6,7 @@ const crearPalabra = (letter, num) => {
     for (let i = 0; i < num; i++) {
         palabra += letter;
     }
-    console.log(palabra);
+    return palabra;
 
 }
-crearPalabra('a', 5);
+console.log(crearPalabra('a', 5));

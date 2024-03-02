@@ -6,12 +6,16 @@ si la letra pasada como parámetro esta en mayúsculas o minúsculas. */
 const contadorDeLetras2 = (txt1, txt2, letter) => {
     let contador1 = 0;
     let contador2 = 0;
+    const txt1Upper = txt1.toUpperCase();
+    const txt2Upper = txt2.toUpperCase();
+    const letterUpper = letter.toUpperCase();
     for (let i = 0; i < txt1.length; i++) {
-        if (txt1[i].toUpperCase() === letter.toUpperCase())
+        if (txt1Upper[i] === letterUpper)
             contador1++;
+        /* console.log(3333)  usar cgl para comprobar cada paso*/
     }
     for (let j = 0; j < txt2.length; j++) {
-        if (txt2[j].toUpperCase() === letter.toUpperCase())
+        if (txt2Upper[j] === letterUpper)
             contador2++;
     }
     if (contador1 < contador2)
@@ -21,5 +25,5 @@ const contadorDeLetras2 = (txt1, txt2, letter) => {
     else
         return txt1 + ' ' + txt2;
 }
-const palabra = contadorDeLetras2('holaa', 'casa', 'a');
-console.log(palabra);
+console.log(contadorDeLetras2('holaaa', 'casa', 'a'));
+
