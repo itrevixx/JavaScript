@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Hacer un formulario para solicitar el envío de una caja de cartón. En el formulario podremos especificar las
+    características de la caja.
+    <br><br><label for="client">Nombre del cliente:</label>
+    <br>
+    <input type="text" id="client">
+    <br><br>
+    <label for="material">Material de la caja:</label>
+    <br>
+    <select id="material">
+        <option value="hierro">Hierro</option>
+        <option value="madera">Madera</option>
+        <option value="acero">Acero</option>
+    </select>
+    <br><br>
+    Seleccione las dimensiones de la caja:
+    <br>
+    <input type="radio" name="boxSize" id="boxSize1" value="diminutas"><label for="boxSize1">Diminutas</label><br>
+    <input type="radio" name="boxSize" id="boxSize2" value="medianas"><label for="boxSize2">Medianas</label><br>
+    <input type="radio" name="boxSize" id="boxSize3" value="grandes"><label for="boxSize3">Grandes</label><br><br>
+    <label for="comments">Cometarios:</label>
+    <br>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    <br><br>
+    <button>Enviar</button>
+    <br><br>
+    <input type="text" id="result" style="width: 600px;">
+    </form>
+    <script>
+        const calculateBox = () => {
+            const clientName = document.querySelector('#client').value;
+            const boxMaterial = document.querySelector('#material').value;
+            const boxSize = document.querySelector('input[name="boxSize"]:checked').value;
+            const comments = document.querySelector('#comment').value;
+
+            const msg = `${clientName} ha pedido una caja de ${boxMaterial} con unas dimensiones ${boxSize}. ${comments}`;
+
+            document.querySelector('#result').value = msg;
+        }
+
+        document.querySelector('button').addEventListener('click', calculateBox);
+    </script>
+
+</body>
+
+</html>

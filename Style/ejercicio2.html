@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ejercicio: cambiar color body
+
+Cuando seleccionemos un valor en el combo desplegable, el color del body debe cambiar.
+
+Para ello, añadiremos el listener change al combo desplegable. -->
+    <select id="color">
+        <option value="white">Selecciona un color</option>
+        <option value="green">Verde</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarillo</option>
+    </select>
+</body>
+<script>
+    const selectColor = () => {
+        const color = document.querySelector('#color').value;
+        document.querySelector('body').style.backgroundColor = color
+    }
+    document.querySelector('#color').addEventListener('change', selectColor);
+</script>
+
+</html>

@@ -1,0 +1,39 @@
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 800px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    transition: 1s;
+}
+
+.box.blue {
+    background-color: #537d91;
+}
+
+.box.gray {
+    background-color: #6c757d;
+}
+
+.box.orange {
+    background-color: #f77754;
+}
+
+.disabled {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+
+}

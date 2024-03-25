@@ -1,0 +1,63 @@
+.slider {
+    display: flex;
+    width: 1280px;
+    transition: 1s;
+}
+
+.sliderContainer {
+    width: 256px;
+    height: 256px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 256px;
+    height: 256px;
+    background-repeat: no-repeat;
+
+}
+
+@font-face {
+    font-family: dbz;
+    src: url(./Saiyan-Sans.ttf);
+}
+
+body {
+    background-image: url(./28ef1a03ecbcccfd06494729d5124932.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.goku {
+    background-image: url(./tuxes/PinguLinux_Goku.png);
+}
+
+.cell {
+    background-image: url(./tuxes/PinguLinux_Celula.png);
+
+}
+
+.follet {
+    background-image: url(./tuxes/PinguLinux_FolletTortuga.png);
+}
+
+.naruto {
+    background-image: url(./tuxes/PinguLinux_Naruto.png);
+}
+
+.sonic {
+    background-image: url(./tuxes/PinguLinux_Sonic.png);
+
+}
+
+a {
+    text-decoration: none;
+    margin-left: 40%;
+    font-size: xx-large;
+    font-family: dbz;
+    color: orange;
+}
